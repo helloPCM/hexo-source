@@ -1,0 +1,28 @@
+{
+    "deploy": {
+        "packages": [{
+            "files": [
+                "**/*",
+            ],
+
+            "exclude": [
+                "node_modules/**",
+                ".ssh/**",
+                ".vscode/**",
+                "scaffolds/**",
+                "themes/**",
+                "**/node_modules/**",
+            ],
+            "deployOnSave": false
+        }],
+        "targets": [{
+            "type": "sftp",
+            "name": "HexoBlogServer",
+            "dir": "/root/source/hexoblog",
+            "host": "118.24.108.49",
+            "port": 22,
+            "user": "root",
+            "privateKey": "/Users/PCM/Documents/root/pachiuba"
+        }],
+    },
+}
