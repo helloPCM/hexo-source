@@ -1,2 +1,16 @@
 language: node_js
-script: hexo clean && hexo deploy
+
+# 仓库的分支
+branches:
+  only:
+  - master
+
+# 执行install
+install:
+ - npm install hexo-cli -g
+ - npm install
+
+# 执行命令脚本
+script:
+ - hexo clean
+ - hexo g -d
