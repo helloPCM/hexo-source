@@ -18,11 +18,12 @@
         "targets": [{
             "type": "sftp",
             "name": "HexoBlogServer",
-            "dir": "/root/source/hexoblog",
+            "dir": "/home/travis/hexoblog",
             "host": "118.24.108.49",
             "port": 22,
-            "user": "root",
-            "privateKey": "/Users/PCM/Documents/root/pachiuba"
+            "user": "travis",
+            "password": "hello_pcm168"
+            // "privateKey": "/Users/PCM/Documents/root/pachiuba"
         }],
     },
 }
